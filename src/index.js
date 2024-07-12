@@ -8,8 +8,8 @@ import LoginForm from "./Home/components/LoginForm.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/summary" element={<Summary />} />
         <Route path="/login" element={<LoginForm />} />
